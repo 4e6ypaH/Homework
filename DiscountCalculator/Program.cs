@@ -78,7 +78,7 @@ namespace DiscountСalculator
                 int.TryParse(Console.ReadLine(), out var discountValue);
                 if (discountValue > price)
                 {
-                    Console.WriteLine("Значение скидки не может быть больше суммы товара");
+                    Console.WriteLine("Значение скидки не может быть больше суммы товара. Введите корректное значение скидки.");
 
                     int.TryParse(Console.ReadLine(), out discountValue);
                 }

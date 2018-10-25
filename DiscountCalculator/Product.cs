@@ -35,7 +35,7 @@ namespace DiscountСalculator
                         $"Сумма с учётом скидки: {CalculateDiscountPrice()}р.";
                 else if (DiscountType == "карта")
                     return $"На данный товар действует скидка {DiscountValue}р в период с {StartSellDate.Value.ToShortDateString()} по {EndSellDate.Value.ToShortDateString()}. " +
-                        $"Сумма с учётом скидки: {CalculateDiscountPrice()}р." + $"На карте осталось: {CardPoints} рублей.";
+                        $"Сумма с учётом скидки: {CalculateDiscountPrice()}р." + $" На карте осталось: {CardPoints} рублей.";
                 else if (DiscountType == "процент")
                     return $"На данный товар действует скидка {DiscountValue}% в период с {StartSellDate.Value.ToShortDateString()} по {EndSellDate.Value.ToShortDateString()}. " +
                         $"Сумма с учётом скидки: {CalculateDiscountPrice()}р.";
